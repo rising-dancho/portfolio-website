@@ -292,6 +292,23 @@ a:active {
   text-decoration: underline;
 }
 
+.special-link:hover,
+.special-link:active {
+  text-decoration: underline;
+}
+
+.special-link:link,
+.special-link:visited {
+  color: #3272B6;
+  text-decoration: none;
+  /* font-weight: bold; */
+}
+
+.special-link:hover,
+.special-link:active {
+  text-decoration: underline;
+}
+
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
