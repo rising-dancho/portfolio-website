@@ -299,7 +299,7 @@ a:active {
 
 .special-link:link,
 .special-link:visited {
-  color: #3272B6;
+  color: var(--main-color);
   text-decoration: none;
   /* font-weight: bold; */
 }
