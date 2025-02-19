@@ -314,48 +314,36 @@ a:active {
 /* ------------------------ */
 /* BUTONS*/
 .btn {
-  background: var(--main-gradient-dark);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-decoration: none !important;
   text-transform: uppercase;
   font-weight: var(--fw-500);
   display: inline-block;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius) !important;
+  font-family: var(--rubik-font-family) !important;
 }
 
-.btn-gradient:link,
-.btn-gradient:visited {
-  background: var(--main-gradient-dark);
-  color: var(--white-text);
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    var(--main-gradient-light),
-    var(--main-gradient-dark)
-  );
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    var(--main-gradient-light),
-    var(--main-gradient-dark)
+/* https://markodenic.com/tools/.btn-adds-generator/ */
+.btn-gradient {
+  color: white !important;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: none;
+  background-size: 120% auto;
+  border-radius: var(--border-radius) !important;
+  background-image: linear-gradient(
+    315deg,
+    var(--main-gradient-dark) 0%,
+    var(--main-gradient-hover) 90%
   );
 }
 
-.btn-gradient:hover,
+.btn-gradient:hover {
+  background-position: right center;
+}
 .btn-gradient:active {
-  background: var(--main-gradient-dark);
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    var(--main-gradient-hover),
-    var(--main-gradient-dark)
-  );
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    var(--main-gradient-hover),
-    var(--main-gradient-dark)
-  );
+  top: 2px;
 }
 
 .btn-outline {
@@ -569,29 +557,32 @@ main .form_label {
 
 main .contact .form_button {
   padding: 0.65rem 2rem;
-  background: linear-gradient(
-    to right,
-    var(--main-gradient-light),
-    var(--main-gradient-dark)
-  );
   color: var(--white-text);
   border-radius: var(--border-radius);
   cursor: pointer;
   width: 120px;
   margin: 0;
   font-family: var(--rubik-font-family);
-  transition: 0.25s;
   font-size: 1rem;
   font-weight: 500;
   border: none;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  background-size: 120% auto;
+  background-image: linear-gradient(
+    315deg,
+    var(--main-gradient-dark) 0%,
+    var(--main-gradient-hover) 90%
+  );
 }
 
 main .form_button:hover {
-  background: linear-gradient(
-    to right,
-    var(--main-gradient-hover),
-    var(--main-gradient-dark)
-  );
+  background-position: right center;
+}
+main .form_button:active {
+  top: 2px;
 }
 
 main .form_input {
