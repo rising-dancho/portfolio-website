@@ -282,6 +282,13 @@ img {
   object-fit: contain;
 }
 
+.grayscale {
+  width: 440px;
+  height: 440px;
+  object-fit: cover;
+  object-position: top; /* Ensures the upper part of the image is visible */
+}
+
 /* lvha */
 a:link,
 a:visited {
