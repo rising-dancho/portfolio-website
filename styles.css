@@ -331,7 +331,7 @@ a:active {
   font-family: var(--rubik-font-family) !important;
 }
 
-/* https://markodenic.com/tools/.btn-adds-generator/ */
+/* https://markodenic.com/tools/buttons-generator/ */
 .btn-gradient {
   color: white !important;
   transition: all 0.3s ease;
