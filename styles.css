@@ -515,6 +515,7 @@ main .preview {
   height: 294px;
   width: 100%;
   object-fit: contain;
+  border-radius: 8px; /* optional */
   /* border: 2px solid red; */
 }
 
