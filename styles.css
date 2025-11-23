@@ -512,6 +512,9 @@ main .project-details li:last-child {
 main .preview {
   height: fit-content;
   object-fit: contain;
+  height: 294px;
+  width: 100%;
+  object-fit: cover;
   /* border: 2px solid red; */
 }
 
